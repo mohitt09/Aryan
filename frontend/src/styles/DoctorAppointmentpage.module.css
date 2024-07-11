@@ -1,0 +1,180 @@
+/* .body {
+    height: 100vh;
+    margin: 0;
+} */
+
+
+.Navbarr {
+    width: 100%;
+    height: 100px;
+    background: rgb(191, 220, 246);
+    box-shadow: 4px 5px 8px rgba(0, 0, 2, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+}
+
+
+.logo {
+    width: 13vw;
+    mix-blend-mode: multiply;
+}
+
+.btn {
+    font-size: 1.5vw;
+    cursor: pointer;
+    background: rgb(191, 220, 246);
+    border: none;
+    /* Remove border */
+    padding: 8px 16px;
+    /* Adjust padding as needed */
+    transition: all 0.3s ease;
+    /* Add smooth transition for hover effect */
+}
+
+.btn:hover {
+    background: #fff;
+    /* Change background color on hover */
+    color: #5b79db;
+    /* Change text color on hover */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    /* Add shadow on hover */
+    transform: translateY(4px);
+    /* Move button 4px down on hover */
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* Sidebar.module.css */
+
+
+
+
+/* Hamburger.module.css */
+
+.hamburger {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    position: sticky;
+    margin-bottom: 7px;
+    left: 195px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+
+
+
+
+
+.sidebar {
+    height: calc(100vh - 100px) ; 
+    background:  rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: width 0.3s ease;
+    width: 300px;
+}
+
+.sidebarItem {
+    margin-bottom: 10px;
+}
+
+.sidebarItem a {
+    transition: width 0.9s ease-in-out;
+    
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+    font-size: 16px; /* Increase font size */
+    font-weight: 500; /* Make text slightly bold */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+/* Add icons to sidebar items */
+.sidebarItem a::before {
+    content: "\2713"; /* Example icon (checkmark) */
+    display: inline-block;
+    margin-right: 5px;
+    color: #007bff; /* Icon color */
+}
+
+
+.sidebarItem Img{
+    width: 80%;
+    border-radius: 50%;
+    padding: 5px 5px 5px 10px;
+    border: 1px solid gray;
+}
+
+
+.sidebarItem h6{
+padding: 0px 0px 0px 9px;
+margin-left: 5%;
+color: #50e387;
+}
+
+.sidebarItem p{
+    margin-top: 3px;
+    padding: 5px 5px 5px 5px;
+    color: #989898;
+}
+
+
+.total:hover{
+    background-color: #ddd; /* Change hover background color */
+    color: #007bff; /* Change hover text color */
+    border-radius: 5px;
+}
+
+
+.pie{
+    height: 300px;
+}
+
+
+
+.customDatePickerContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 5px 10vw; */
+    flex-wrap: wrap; /* Ensures the items wrap onto multiple lines if needed */
+}
+
+/* Media query for screens smaller than 890px */
+@media (max-width: 890px) {
+    .customDatePickerContainer {
+        flex-direction: column;
+        align-items: flex-start; 
+        align-items: center;
+    }
+}

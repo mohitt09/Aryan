@@ -1,0 +1,188 @@
+.Text p {
+    margin-bottom: 1em;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width:768px) {
+    
+    .Text p {
+        margin-bottom: 1em;
+        font-size: 4vw;
+    }    
+}
+
+.Text h2 {
+    margin-bottom: 1em;
+    font-size: 2vw;
+}
+
+.Text h3 {
+    margin-bottom: 1em;
+    font-size: 1.5vw;
+}
+
+.Text strong {
+    color: #3e3e3e;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1em;
+}
+
+.Text ul li {
+    margin-bottom: 1em;
+    font-size: 1.5vw;
+}
+
+
+.title {
+    font-size: 2.5vw;
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        font-size: 5vw !important;
+    }
+
+    .Text h2 {
+        margin-bottom: 1em;
+        font-size: 5vw;
+    }
+
+    .Text ul li {
+        margin-bottom: 1em;
+        font-size: 5vw;
+    }
+
+    .Text h3 {
+        margin-bottom: 1em;
+        font-size: 5vw;
+    }
+}
+
+
+.links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10em;
+    background: white;
+}
+
+@media screen and (max-width:768px) {
+
+    .links {
+        gap: 1em;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+.links .childone {
+    display: flex;
+    gap: 5em;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .links .childone {
+        flex-direction: column;
+        gap: 1em;
+        align-items: start;
+    }
+
+}
+
+.links .childone .subchildone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.links .childone .subchildtwo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .links .childone .subchildtwo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+
+.links .childTwo {
+
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .links .childTwo {
+        flex-direction: column-reverse;
+        gap: 1em;
+        align-items: end;
+    }
+
+}
+
+
+.links .childTwo .subchildone {
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+@media screen and (max-width:768px) {
+
+    .links .childTwo .subchildone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+.links .childTwo .subchildone .heart {
+    cursor: pointer;
+}
+
+
+.links .childTwo .subchildtwo {
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .links .childTwo .subchildtwo {
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+
+}
+
+
+
+.links .childTwo .subchildtwo .auther {
+
+    color: rgb(10, 10, 154);
+}

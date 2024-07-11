@@ -1,0 +1,345 @@
+.dashboardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.tab {
+    margin-top: 1em;
+    margin-left: 16em;
+}
+
+@media screen and (max-width:768px) {
+    .tab{
+        margin-left: 0em;
+    }
+}
+
+.dashboardHeader h1 {
+    margin: 0;
+}
+
+.userDropdown {
+    position: relative;
+}
+
+.userIcon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdownContent button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    color: #0F52BA;
+}
+
+/* .dropdownContent button:hover {
+    background-color: #ddd;
+  } */
+
+.dropdownContent button::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.dropdownContent button:hover::after {
+    transform: scale(3);
+}
+
+
+
+/* Sidebar */
+
+
+
+.sidebar {
+    background-color: #0F52BA;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 10;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebarHeader {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebarContent ul {
+    list-style: none;
+    padding: 2em 0em;
+}
+
+.sidebarContent ul li {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0.9em 0.9em;
+    border-radius: 5px;
+}
+
+/* .sidebarContent ul li:hover {
+    background-color: #44536f;
+} */
+
+.Utilities {
+    display: none;
+}
+.profile {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+/* Media Query for Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        height: 17em;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+
+        
+        
+    }
+
+    .profile {
+        width: 30%;
+        border-radius: 47%;
+    }
+
+   
+
+    .sidebarContent ul {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-around;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        margin-top: -1.5em;
+
+    }
+
+    .Utilities {
+        gap: 20px;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+
+    .sidebarContent ul li {
+        padding: 0rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        height: 100vh;
+    }
+}
+
+
+/* Main */
+
+
+
+
+.homeContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-left: 250px;
+    /* Adjust this value to match the width of your sidebar */
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .homeContainer {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tableContainer {
+        overflow-x: auto;
+    }
+
+}
+/* 
+.tableContainer {
+    padding: 4px;
+    height: 30em;
+    margin-left: 250px;
+    
+    padding: 3px 5px;
+    background: #f0f0f0;
+    padding-bottom: 20px;
+    border-radius: 5px;
+   
+    box-shadow: 0px 0px 10px -5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+th{
+    color: rgb(255, 255, 255); 
+    padding: 0.75rem;
+    border: solid white 1px;
+}
+
+td {
+    color: black;
+    padding: 0.75rem;
+    border: 0.1px solid #000;
+}
+
+th {
+    background: linear-gradient(to bottom, #92c5ff, #110f80);
+    font-size: 0.9rem;
+}
+
+td {
+    font-size: 0.8rem;
+} */
+
+@media (max-width: 768px) {
+    .tableContainer {
+        margin-left: 0px;
+        padding-bottom: 10px;
+        height: 50em;
+    }
+
+}
+
+.approveBtn,
+.rejectBtn {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approveBtn {
+    background-color: rgb(92, 184, 92);
+    /* Green color for Approve button */
+    color: #fff;
+}
+
+.rejectBtn {
+    background-color: rgb(217, 83, 79);
+    /* Red color for Reject button */
+    color: #fff;
+}
+
+
+/* DashboardMain.module.css */
+
+.approvedRow {
+    background-color: rgb(92, 184, 92);
+}
+
+.rejectedRow {
+    background-color: rgb(217, 83, 79);
+}
+ 
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    left: 45%;
+    bottom: 0;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 0.25em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+}
+
+.status-approved {
+    color: #3470ff; /* Blue color for approved */
+    
+}
+
+.status-rejected {
+    color: red; /* Red color for rejected */
+}
+
+.status-rescheduled {
+    color: #f1c40f; /* Yellow color for rescheduled */
+}
+
+.status-pending {
+    color: gray; /* Gray color for pending */
+}

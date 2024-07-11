@@ -1,0 +1,73 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; /* horizontal gap */
+    row-gap: 1rem; 
+    max-width:  41rem;
+    margin: 2.5rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; /* Darker text for labels */
+    font-size: 0.875rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem; /* Increased padding for better touch target */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Darker text for inputs */
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e0e0e0; /* Slightly darker border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+    border-color: #4299e1;
+}
+
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #34d399; /* You can customize the color */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem; /* Increased padding for better touch target */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.button:hover {
+    background-color: #10b981; /* You can customize the hover color */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* If you have a specific style for the blue button, define it here */
+.blueButton {
+    background-color: #007bff; /* Example blue color */
+}

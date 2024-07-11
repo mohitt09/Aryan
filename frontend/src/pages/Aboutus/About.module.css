@@ -1,0 +1,879 @@
+.About {
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .About {
+        padding: 2%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        display: block;
+    }
+}
+
+.About h2 {
+    margin-top: 1em;
+    font-size: 2.5vw;
+    color: #3e3e3e;
+    font-weight: 300;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+.About p {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.7vw;
+    color: #8997a7;
+    font-weight: 100;
+    font-family: 'Habibi', serif;
+}
+
+.About .para {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.3vw;
+    line-height: 2;
+    text-align: justify;
+    padding: 0% 10%;
+    color: #333333;
+    font-weight: 100;
+    font-family: 'Habibi', serif;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .About h2 {
+        font-size: 8vw;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    .About p {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    .About .para {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        font-size: 4.5vw;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0%;
+    }
+}
+
+
+
+
+.cards {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+}
+
+.cards .card {
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .card div {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+.cards .card div .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../data/images/bg1.webp);
+    background-size: cover;
+    transition: all 0.6s ease-in-out;
+}
+
+
+.cards .card div .bg:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+.cards .card div .bg2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../data/images/bg2.webp);
+    background-size: cover;
+    transition: all 0.6s ease-in-out;
+}
+
+.cards .card div .bg2:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.cards .card h4 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    padding: 5%;
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .card:hover h4 {
+    color: rgb(16, 16, 136);
+}
+
+.cards .card p {
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 2;
+    text-align: justify;
+    padding: 5%;
+}
+
+
+
+
+.choose {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    gap: 2%;
+}
+
+
+@media screen and (max-width:768px) {
+    .choose {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.choose .right,
+.choose .left {
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+
+    .choose .right,
+    .choose .left {
+        width: 100%;
+
+    }
+}
+
+.choose .left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .choose .left img {
+        width: 100%;
+    }
+}
+
+.choose .right h4 {
+    font-size: 2.5vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+    .choose .right h4 {
+        font-size: 7vw;
+        margin-top: 1em;
+    }
+}
+
+
+.choose .right h4:hover {
+    color: rgb(16, 16, 136);
+}
+
+
+.choose .right ul {
+    margin-top: 1em;
+}
+
+.choose .right ul li {
+    font-size: 1.4vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 1em;
+    line-height: 1px;
+}
+
+.choose .right ul li span {
+    font-size: 1.4vw;
+    font-family: 'Habibi', serif;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.choose .right ul .special {
+    font-size: 1.4vw;
+    font-family: 'Habibi', serif;
+    font-weight: 100;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .choose .right ul {
+        margin-top: 1em;
+        padding-left: 4vw;
+    }
+
+    .choose .right ul li {
+        font-size: 4vw;
+    }
+
+    .choose .right ul li span {
+        font-size: 4vw;
+    }
+
+    .choose .right ul .special {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+
+
+.cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .cart {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.cart>div {
+    flex-grow: 1;
+}
+
+.cart .cart1 {
+    background-color: #1976d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px 10px 5px;
+}
+
+.cart .cart1 .color {
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.cart .cart1 h6 {
+    color: #ffffff;
+    font-size: 2.5vw;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cart .cart1 p {
+    color: #ffffff;
+    font-size: 1.45vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 1em;
+    font-family: 'Habibi', serif;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .cart .cart1 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart1 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+
+/* 16may */
+.cart .cart2 {
+    width: 100%;
+    position: relative;
+}
+
+.imgtext {
+    position: absolute;
+    bottom: 20px;
+    width: 75%;
+    padding: 2% 0%;
+    border-radius: 5px;
+
+    left: 13%;
+    font-size: 1.5vw;
+    color: #ffffff;
+    background: #2563eb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .imgtext {
+        font-size: 6vw;
+        bottom: 10%;
+        left: 17%;
+    }
+}
+
+.cart .cart2 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cart .cart2 h6 {
+    color: #000000;
+    font-size: 2vw;
+    margin-top: 1em;
+}
+
+.cart .cart2 ul {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+}
+
+
+
+
+.cart .cart2 p {
+    color: #000000;
+    font-size: 1.2vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Habibi', serif;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .cart .cart2 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart2 ul {
+        width: 100%;
+        margin-top: 1.4em;
+        margin-bottom: 2em;
+        font-size: 4vw;
+        font-family: 'Habibi', serif;
+    }
+
+    .cart .cart2 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+.cart .cart3 {
+    
+    background-color: #1976d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px 10px 5px;
+}
+
+.cart .cart3 .color {
+    color: #ffffff;
+    font-size: 4em;
+}
+
+
+.cart .cart3 p {
+    color: #ffffff;
+    font-size: 1.45vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Habibi', serif;
+    margin-top: 1em;
+}
+
+
+.cart .cart3 h6 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:768px) {
+
+    .cart .cart3 {
+    
+        margin-top: 1px;
+    }
+    .cart .cart3 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart3 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+
+.Department {
+    width: 100%;
+    padding: 2%;
+
+    display: flex;
+}
+
+.Department .right,
+.Department .left {
+    width: 50%;
+}
+
+
+.Department .left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Department .right h4,
+.Department .left h4 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vw;
+    color: #3e3e3e;
+}
+
+@media screen and (max-width:768px) {
+
+    .Department .right h4,
+    .Department .left h4 {
+        font-size: 8vw;
+        margin-top: 1em;
+    }
+}
+
+.Department .right .line,
+.Department .left .line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 auto 45px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}
+
+
+.Department .right .option {
+    font-family: 'Habibi', serif;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    padding: 2%;
+    font-weight: 300;
+    gap: 5%;
+}
+
+
+.notselected {
+    padding: 10px 6px;
+    color: #1976d2;
+    background-color: #1976d2 ;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.selected {
+    color: #1e40af;
+    font-weight: 300;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.Department .right .content {
+    display: flex;
+    justify-content: center;
+}
+
+.Department .right p {
+    padding: 2%;
+    width: 90%;
+    font-size: 1.5vw;
+    color: #8997a7;
+    font-weight: 100;
+    font-family: 'Habibi', serif;
+    text-align: justify;
+}
+
+
+
+.Department .left .box {
+    width: 90%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: #1976d2;
+    font-weight: 600;
+    font-size: 1.6vw;
+    margin-bottom: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.Department .left p {
+    width: 90%;
+    text-align: justify;
+    font-size: 1.5vw;
+    color: #8997a7;
+    font-family: 'Habibi', serif;
+    margin-bottom: 1em;
+    transition: opacity 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .Department {
+        flex-direction: column;
+    }
+
+    .Department .right,
+    .Department .left {
+        width: 100%;
+    }
+
+    .Department .left .box {
+        width: 90%;
+        padding: 4%;
+        font-size: 5vw;
+    }
+
+    .Department .left p {
+        width: 90%;
+        font-size: 5.2vw;
+    }
+
+
+    .Department .right p {
+        font-size: 5.2vw;
+        width: 100%;
+    }
+
+    .Department .right .option {
+        font-size: 3.8vw;
+        gap: 2px;
+    }
+
+}
+
+
+/* new */
+
+.imgs {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 2%;
+}
+
+.sec {
+    width: 100%;
+}
+
+.sec img {
+    width: 100%;
+}
+
+.sec2 p {
+    margin-bottom: 0.5em;
+    font-size: 1.3vw;
+    line-height: 2;
+    text-align: justify;
+    padding: 0 1% 2% 1%;
+    font-size: 1.5vw;
+    color: #8997a7;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Habibi', serif;
+}
+
+
+@media screen and (max-width:768px) {
+    .sec2 p {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    .line {
+        border-left: 2px solid #fff;
+        height: 0px;
+        margin: 0px 0;
+    
+    }
+}
+
+
+.line {
+    border-left: 2px solid #fff;
+    height: 0px;
+    margin: 0px 0;
+
+}
+
+
+
+.About2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+
+    .About2 {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+}
+
+.About2 .Aboutone {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.About2 .Aboutone img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+
+.About2 .Aboutone h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    margin-top: 5px;
+    font-size: 2vw;
+}
+
+.About2 .Aboutone h6 {
+    font-family: 'Habibi', serif;
+    color: #3e3e3e;
+    margin-top: 5px;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width:768px) {
+
+    .About2 .Aboutone {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .About2 .Aboutone img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    .About2 .Aboutone h2 {
+        font-size: 6vw;
+    }
+    
+    .About2 .Aboutone h6 {
+        font-size: 4.5vw;
+    }
+
+}
+
+.About2 .Abouttwo {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.About2 .Abouttwo h2 {
+    font-size: 2.5vw;
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    margin-top: 5px;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .About2 .Abouttwo {
+        width: 100%;
+        margin: 2% 0;
+        display: none;
+    }
+
+    .About2 .Abouttwo h2 {
+        font-size: 8vw;
+    }
+
+
+    .About2 .Abouttwo h2 {
+        font-size: 6vw;
+    }
+
+}
+
+
+.About2 .Abouttwo p {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 10px;
+    color: #8997a7;
+    font-family: 'Habibi', serif;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .About2 .Abouttwo p {
+        font-size: 4vw;
+    }
+
+}
+
+
+
+.About2 .Aboutthree {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.About2 .Aboutthree img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.About2 .Aboutthree h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    margin-top: 5px;
+    font-size: 2vw;
+}
+
+.About2 .Aboutthree h6 {
+    font-family: 'Habibi', serif;
+    margin-top: 2px;
+    color: #3e3e3e;
+    font-size: 1.5vw;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .About2 .Aboutthree {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .About2 .Aboutthree img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    .About2 .Aboutthree h2 {
+        font-size: 6vw;
+    }
+
+    .About2 .Aboutthree h6 {
+        font-size: 4.5vw;
+    }
+}

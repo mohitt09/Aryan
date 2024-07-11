@@ -1,0 +1,283 @@
+.Footer {
+    padding: 2%;
+    background: #f8f8f8;
+    width: 100%;
+    margin-top: 1em;
+    border-top: 2px solid #e9e9e9;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:600px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+.Footer div {
+    width: 19%;
+    display: flex;
+    font-size: 0.78125vw;
+    flex-direction: column;
+}
+
+.Footer .in {
+    width: 20%;
+    display: flex;
+    font-size: 0.78125vw;
+    flex-direction: column;
+}
+
+.Footer .Services {
+    width: 25%;
+    display: flex;
+    font-size: 0.78125vw;
+    flex-direction: column;
+}
+
+@media screen and (max-width:600px) {
+    .Footer div {
+        width: 100%;
+    }
+    .Footer .in {
+        width: 100%;
+    }
+    
+    .Footer .Services {
+        width: 100%;
+        
+    }
+}
+
+
+.Footer div h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 300;
+    text-align: left;
+    color: #313338;
+}
+
+.Footer div .line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 0px 20px 0px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}
+
+@media screen and (max-width:600px) {
+
+    .Footer div h2 {
+        font-size: 8.2vw;
+    }
+
+    .Footer div .line {
+        border-bottom: 1.5px solid #2563eb;
+    }
+}
+
+.Footer div p {
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: #313338;
+    text-align: left;
+    font-family: 'Habibi', serif;
+    margin-bottom: 1em;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.phone{
+    color: #2563eb;
+    font-size: .7em;
+}
+
+@media screen and (max-width:600px) {
+
+    .Footer div p {
+        font-size: 5vw;
+    }
+
+    .Footer div .p {
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    .phone{
+        color: #2563eb;
+        font-size: 1em;
+    }
+}
+
+.Footer div ul {
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: #313338;
+    text-align: center;
+    font-family: 'Habibi', serif;
+
+}
+
+.Footer div ul li {
+    border-bottom: 1px solid #2563eb;
+    margin-bottom: 1em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+}
+
+.Footer div ul li span {
+    font-size: 1vw;
+    color: #2563eb;
+}
+
+@media screen and (max-width:600px) {
+
+    .Footer div ul {
+        font-size: 5vw;
+
+    }
+
+    .Footer div ul li span {
+        font-size: 3.5vw;
+        color: #2563eb;
+    }
+}
+
+
+.Footer div ul li:hover {
+    color: #2563eb;
+}
+
+.Footer div .Tag {
+    width: 100%;
+    font-family: 'Habibi', serif;
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: #313338;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.Footer div .Tag h6 {
+    border: 1px solid #848484;
+    padding: 2% 6%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .Footer div ul {
+        font-size: 5vw;
+
+    }
+
+    .Footer div .Tag {
+        font-size: 5vw;
+    }
+
+    .Footer div .Tag h6 {
+        border: 1px solid #e2e6e7;
+        padding: 2% 6%;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+
+}
+
+.Footer div .Tag h6:hover {
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    color: #ffffff;
+}
+
+.bottom {
+    width: 100%;
+    padding: 2%;
+    background-color: aliceblue;
+    font-family: 'Habibi', serif;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .bottom {
+        padding: 4%;
+        gap: 1em;
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom {
+        font-size: 5vw;
+    }
+
+}
+
+.bottom .links {
+    display: flex;
+    gap: 10px;
+    color: #1e40af;
+
+}
+
+
+.bottom .links .two,
+.bottom .links .three,
+.bottom .links .four,
+.bottom .links .one {
+    border: 1px solid #1e40af;
+    padding: 4%;
+    font-size: 2.3vw;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+
+    .bottom .links .two,
+    .bottom .links .three,
+    .bottom .links .four,
+    .bottom .links .one {
+        font-size: 8.5vw;
+    }
+
+}
+
+
+.dev {
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Habibi', serif;
+    font-size: 1.5vw;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .dev {
+        font-size: 5vw;
+    }
+
+}

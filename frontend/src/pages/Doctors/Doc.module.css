@@ -1,0 +1,233 @@
+.line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 auto 45px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}
+
+
+.column {
+    border: 5px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.sliderbtn {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: #1e40af;
+    font-weight: 600;
+    border: 2px solid #1e40af;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.386);
+}
+
+.sliderbtn:hover {
+    cursor: pointer;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+
+.column img {
+    /* width: 100%; */
+    height: 50vh;
+    aspect-ratio: 3/2;
+    position: relative;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+    /* Add a transition for smooth effect */
+}
+
+.column:hover img,
+.column:active img {
+    filter: brightness(1);
+    /* Reset brightness when hovering or clicking */
+}
+
+
+
+.hoverContent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center ; */
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /* Initially visible */
+    transition: opacity 0.5s ease;
+    z-index: 3;
+
+}
+
+.column:hover .hoverspeciality {
+    display: none;
+}
+
+
+
+
+.column:hover .hovername {
+    position: absolute;
+    top: -8.2vw;
+    background: #ffffff;
+    padding: 7% 30%;
+}
+
+@media screen and (max-width:768px) {
+    .column:hover .hovername {
+        position: absolute;
+        top: -10vw;
+        background: #ffffff;
+        padding: 7% 30%;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .column:hover .hovername {
+        position: absolute;
+        top: -15vh;
+        background: #ffffff;
+        padding: 7% 30%;
+    }
+
+}
+
+
+@media screen and (max-width:425px) {
+
+    .column:hover .hovername {
+        position: absolute;
+        top: -16.8vh;
+        background: #ffffff;
+        padding: 7% 30%;
+    }
+
+}
+
+
+
+
+
+
+.hovername {
+    color: #1e40af;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+
+
+
+.hoverspeciality {
+    font-size: 14px;
+    color: #aaa;
+    font-weight: 300;
+    font-family: 'Habibi', serif;
+    white-space: nowrap;
+}
+
+
+.column::before,
+.column::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 40vh; */
+    background-color: rgb(255, 255, 255);
+    transition: all 0.6s linear;
+    z-index: 2;
+}
+
+
+
+
+@media screen and(max-width:375px) {
+
+    .column::before,
+    .column::after {
+        content: "";
+        position: absolute;
+
+        width: 86%;
+        height: 40vh;
+    }
+}
+
+.column::after {
+    height: 47vh;
+    background: white;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 34% 90%, 0 100%);
+    margin-top: -20px;
+    /* Adjust this value as needed to control the cut */
+    transform: rotate(0deg);
+    /* Rotate the shape by -45 degrees */
+}
+
+
+.column:hover::before {
+    z-index: -6;
+    height: 0vh;
+}
+
+.column:hover::after {
+    z-index: -6;
+    height: 0vh;
+}
+
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 2%;
+    background: #ccc;
+}
+
+.links>.two,
+.links>.three,
+.links>.four,
+.links>.one {
+    border: 1.4px solid #ffffff;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.links>.one:hover {
+    color: #1877F2;
+    border: 1.4px solid #1877F2;
+}
+
+.links>.two:hover {
+    color: #E4405F;
+    border: 1.4px solid #E4405F;
+}
+
+.links>.three:hover {
+    color: #DB4437;
+    border: 1.4px solid #DB4437;
+}
+
+.links>.four:hover {
+    color: #0A66C2;
+    border: 1.4px solid #0A66C2;
+}

@@ -1,0 +1,24 @@
+{ 
+    "hospitalName": "Aryan Hospital",
+    "sections": [
+      {
+        "icon": "images/img_settings.svg",
+        "title": "Emergency",
+        "subtitle": "9918827736",
+        "content": ""
+      },
+      {
+        "icon": "images/img_clock.svg",
+        "title": "Work Hour",
+        "subtitle": "09:00-06:00 Everyday",
+        "content": ""
+      },
+      {
+        "icon": "images/img_linkedin.svg",
+        "title": "Location",
+        "subtitle": "Gurgaon",
+        "content": ""
+      }
+    ]
+  }
+  

@@ -1,0 +1,18 @@
+.line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 auto 45px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}
+
+
+.boxs{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    justify-content: left;
+}

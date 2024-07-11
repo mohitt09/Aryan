@@ -1,0 +1,21 @@
+ 
+{
+    "links": [
+      { "label": "Appointment", "url": "/appointment" },
+      { "label": "Doctors", "url": "/doctors" },
+      { "label": "Contact Us", "url": "/contact" },
+      { "label": "About Us", "url": "/aboutus" }
+    ],
+    "contact": {
+      "phoneNumber": "9918827736",
+      "email": "fildineesoe@gmail.com",
+      "addressLine1": "0123 Some place",
+      "addressLine2": "Some country"
+    },
+    "socialMedia": [
+      { "icon": "link", "url": "https://www.linkedin.com/in/aryan-hospital-b37a1490/" },
+      { "icon": "facebook", "url": "https://www.facebook.com/aryanhospitalggn?mibextid=ZbWKwL" },
+      { "icon": "info", "url": "https://www.instagram.com/aryanhospitalggn?igsh=YmR4MWgxa28zOTF4" }
+    ]
+  }
+  

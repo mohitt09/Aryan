@@ -1,0 +1,319 @@
+.datepicker {
+    width: 70%;
+    /* height: 28em; */
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 3%;
+    border-radius: 5px;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 6px #e9cbe09a, 0 0 3px rgba(229, 194, 224, 0.607);}
+
+    .highlightedDay {
+        background-color: lightgray;
+        color: black;
+    }
+    
+    .otherDay {
+        background-color: inherit;
+        color: black;
+    }
+    
+
+.datepicker h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin-bottom: 1em;
+    background: #3392ff;
+    padding: 12px 18%;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:456px) {
+
+    .datepicker h1 {
+
+        font-size: 5vw;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 456px) {
+    .datepicker h1 {
+        font-size: 3vw;
+    }
+}
+
+
+.datepicker ul {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    color: #8997a7;
+    font-weight: 100;
+    font-size: 1vw;
+    margin-top: 1.5em;
+    align-items: center;
+    gap: 10px;
+}
+
+.datepicker ul li {
+    display: flex;
+    align-items: center;
+}
+
+.datepicker ul li .icn {
+    font-size: 0.5em;
+}
+
+
+
+.line {
+    position: relative;
+    /* padding-top: 1.5em; */
+    width: 115%;
+    height: 12px;
+    background-color: #1f2b6c;
+    top: -20px;
+    border-radius: inherit;
+}
+
+.ongoingDate {
+    background-image: linear-gradient(to bottom, #e2eaf9, #9cbbe3);
+    /* Highlight color for today's date */
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+    .datepicker {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    color: rgb(31 43 108);
+    gap: 5em;
+}
+
+
+.datepicker table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.datepicker th,
+.datepicker td {
+
+    padding: 0.9em;
+}
+
+.datepicker th {
+    border-bottom: none;
+    color: #2563eb;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    position: relative;
+}
+
+
+.datepicker td {
+    cursor: pointer;
+}
+
+.datepicker td:hover {
+    background-color: #ddd;
+}
+
+.datepicker button {
+    color: #1f2b6c;
+    border-radius: 5em;
+    padding: 0.5em 1.4em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+
+.datepicker span {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:456px) {
+
+    .datepicker span {
+
+        font-size: 4vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 456px) {
+
+    .datepicker span {
+        font-size: 2vw;
+    }
+}
+
+
+.datepicker .tbody {
+    border: 1px solid gray;
+    font-size: 0.7vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:456px) {
+
+    .datepicker .tbody {
+
+        font-size: 3.7vw;
+
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 456px) {
+    .datepicker .tbody {
+        font-size: 2vw;
+    }
+
+}
+
+.datepicker .thead {
+    border: 1px solid gray;
+    border-bottom: none;
+    font-size: 0.7vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:456px) {
+
+    .datepicker .thead {
+        font-size: 3.7vw;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 456px) {
+    .datepicker .thead {
+        font-size: 2vw;
+    }
+
+}
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5em;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    .datepicker th,
+    .datepicker td {
+
+        padding: 1.1em;
+    }
+
+    .datepicker {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        color: rgb(31 43 108);
+        gap: 2em;
+    }
+}
+
+
+
+.containerbtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family: 'Habibi', serif;
+}
+
+
+@keyframes slidingShine {
+    0% {
+        background-position: -100%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+.containerbtn button {
+    margin: 3% 0;
+    width: 70%;
+    padding: 4% 3%;
+    background: #2563eb;
+    color: white;
+    font-family: 'Habibi', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerbtn button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    animation: slidingShine 2s infinite;
+}
+
+.containerbtn button:hover::before {
+    transform: translateX(100%);
+}

@@ -1,0 +1,11 @@
+.MainCardio{
+    display: flex;
+    gap: 10px;   
+}
+
+
+.Border{
+    border: 0.5px solid rgb(202, 202, 202);
+    padding: 25px;
+}
+

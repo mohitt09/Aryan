@@ -1,0 +1,21 @@
+ 
+{
+    "links": [
+      { "label": "Appointment", "url": "/appointment" },
+      { "label": "Doctors", "url": "/doctors" },
+      { "label": "Services", "url": "/services" },
+      { "label": "About Us", "url": "/aboutus" }
+    ],
+    "contact": {
+      "phoneNumber": "9918827736",
+      "email": "fildineesoe@gmail.com",
+      "addressLine1": "0123 Some place",
+      "addressLine2": "Some country"
+    },
+    "socialMedia": [
+      { "icon": "link", "url": "#" },
+      { "icon": "facebook", "url": "#" },
+      { "icon": "info", "url": "#" }
+    ]
+  }
+  

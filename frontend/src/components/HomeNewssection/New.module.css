@@ -1,0 +1,103 @@
+.blog{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.blogimg {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s ease; /* Add transition for smooth effect */
+}
+
+.blogimg:hover {
+    filter: brightness(0.8);
+    transform: scale(.95);
+}
+
+.blogimg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 200%; /* Double the width to cover the entire area diagonally */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.199);
+    animation: shine 1s linear forwards;
+    cursor: pointer;
+    transform: rotate(45deg); /* Rotate the shine by 45 degrees */
+    z-index: 1; /* Ensure it's above the image */
+}
+
+@keyframes shine {
+    from {
+        right: -100%;
+        opacity: 0;
+    }
+    to {
+        right: 100%;
+        opacity: 1;
+    }
+}
+
+
+.font{
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-align: right;
+    color: rgb(17, 17, 156);
+    font-family: 'Habibi', serif;
+}
+.font3{
+    font-size: 1.5vw;
+    text-align: center;
+    color: #3e3e3e;
+    font-family: 'Habibi', serif;
+}
+
+
+.font2{
+    font-size: 1.5vw;
+    text-align: center ;
+    color: rgb(17, 17, 156);
+    font-family: "'Raleway', sans-serif";
+    width: 70%;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+    .font3{
+        font-size: 4.5vw;
+    }
+
+    .font{
+        font-size: 4.5vw;
+    }
+
+    .font2{
+        font-size: 3.5vw;
+        margin-top: 5px;
+    }
+    
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Habibi', serif;
+    color: #3e3e3e;
+}
+
+
+.line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 auto 45px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}

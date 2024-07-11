@@ -1,0 +1,483 @@
+.map {
+   width: 100%;
+   height: 60vh;
+   border: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+   .map {
+      height: 50vh;
+   }
+}
+
+.links {
+   width: 100%;
+   padding: 3%;
+   display: flex;
+   justify-content: center;
+   /* margin-top: 0.5em; */
+   gap: 2em;
+}
+
+.links .two,
+.links .three,
+.links .four,
+.links .one {
+   background: #1e40af;
+   color: #ffffff;
+   padding: 1%;
+   font-size: 2.6vw;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+
+   .links .two,
+   .links .three,
+   .links .four,
+   .links .one {
+      font-size: 6.5vw;
+   }
+
+}
+
+.links .one:hover {
+   background: #345af4;
+}
+
+.links .two:hover {
+   background: #ff1b1b;
+}
+
+.links .three:hover {
+   background: #E4405F;
+}
+
+.links .four:hover {
+   background: #1877F2;
+}
+
+
+
+.buttons {
+   width: 100%;
+   padding: 3%;
+   background: #bed2f7;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+
+/* new */
+
+.heading {
+   padding: 2%;
+   width: 100%;
+}
+
+.heading h2 {
+   font-family: 'Raleway', sans-serif;
+   font-size: 2vw;
+   text-align: left;
+   font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+
+   .heading {
+      padding: 2%;
+      width: 80%;
+   }
+
+   .heading h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 6.7vw;
+   }
+}
+
+.links {
+   width: 100%;
+   padding: 3%;
+   display: flex;
+   justify-content: center;
+   margin-top: 0.5em;
+   gap: 2em;
+   border-top: 2px solid #f8f8f8;
+   border-bottom: 2px solid #f8f8f8;
+}
+
+.links .two,
+.links .three,
+.links .four,
+.links .one {
+   background: #1e40af;
+   color: #ffffff;
+   padding: 1%;
+   font-size: 2.6vw;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+
+   .links .two,
+   .links .three,
+   .links .four,
+   .links .one {
+      font-size: 6.5vw;
+   }
+
+}
+
+.links .one:hover {
+   background: #345af4;
+}
+
+.links .two:hover {
+   background: #ff1b1b;
+}
+
+.links .three:hover {
+   background: #E4405F;
+}
+
+.links .four:hover {
+   background: #1877F2;
+}
+
+
+.parah {
+   text-align: center;
+   font-family: 'Habibi', serif;
+   font-size: 1.5vw;
+   color: #6d6d6d;
+}
+
+
+@media screen and (max-width:768px) {
+
+   .parah {
+      font-size: 4.2vw;
+   }
+
+}
+
+
+.info {
+   /* .text-left */
+   text-align: left;
+
+   /* .text-blue-500 */
+   color: #3B82F6;
+   /* Replace #3B82F6 with your desired shade of blue */
+
+   /* .text-lg */
+   font-size: 1.125rem;
+   /* Equivalent to 18px assuming the default font size is 16px */
+
+   /* tracking-[2.88px] */
+   letter-spacing: 2.88px;
+
+   /* .uppercase */
+   text-transform: uppercase;
+
+   /* .font-bold */
+   font-weight: 600;
+   font-family: 'Work Sans', sans-serif;
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+   .info {
+      margin-top: 1em;
+      font-size: 5vw;
+   }
+}
+
+
+.line {
+   border-bottom: 2px solid #1e40af;
+   background: none repeat scroll 0 0 transparent;
+   height: 1px;
+   margin: 0 auto 1.7vw;
+   padding: 5px;
+   position: relative;
+   width: 120px;
+}
+
+
+.sub{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.button {
+   text-transform: uppercase;
+   font-size: 1.2vw;
+   position: relative;
+   overflow: hidden;
+   margin-top: 0.5em;
+   height: 3.2vw;
+   padding: 0 2rem;
+   background: #ffffff;
+   background-size: 400%;
+   color: #1e40af;
+   border: none;
+   cursor: pointer;
+}
+
+.button:hover::before {
+   transform: scaleX(1);
+}
+
+.button .button1 {
+   position: relative;
+   z-index: 1;
+}
+
+.button::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: scaleX(0);
+   transform-origin: 0 50%;
+   width: 100%;
+   height: inherit;
+   border-radius: inherit;
+   background: #1e40af;
+   border: 2px solid white;
+   color: #fff;
+   transition: all 0.475s;
+   z-index: 0;
+}
+
+.button:hover .button1 {
+   color: white;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+   .button {
+       margin: 2em 0px;
+       font-size: 4vw;
+       height: 11vw;
+   }
+}
+
+
+
+
+
+.model {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid gray;
+   padding: 2%;
+   border-radius: 5px;
+}
+
+.model .form {
+   width: 100%;
+   background: white;
+   padding: 2%;
+   margin-top: 1em;
+   position: relative;
+}
+
+.close {
+   right: 2em;
+   position: absolute;
+   font-size: 2.4vw;
+   transition: transform 0.3s ease;
+   cursor: pointer;
+}
+
+.model .form h2 {
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   font-size: 2vw;
+   color: #1e40af;
+}
+
+@media screen and (max-width:768px) {
+   .model .form h2 {
+       font-size: 5vw;
+   }
+}
+
+.model .form .line {
+   border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.model .form .field {
+   margin-top: 1.5em;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   gap: 3%;
+}
+
+.model .form .field .right,
+.model .form .field .left {
+   width: 50%;
+}
+
+.model .form .field select,
+.model .form .field input {
+   font-family: 'Habibi', serif;
+   width: 100%;
+   padding: 4% 0;
+   padding-left: 5px;
+   font-size: 1vw;
+   border-radius: 3px;
+   outline: 2px solid #1e40af;
+   margin-top: 0.4em;
+}
+
+
+@media screen and (max-width:768px) {
+
+   .model .form .field .right label,
+   .model .form .field .left label {
+       font-size: 4.5vw;
+   }
+
+   .model .form .field select,
+   .model .form .field input {
+       font-family: 'Habibi', serif;
+       width: 100%;
+       padding: 3% 0;
+       padding-left: 5px;
+       font-size: 4.5vw;
+       border-radius: 3px;
+       outline: 1px solid #1e40af;
+       margin-top: 0.4em;
+   }
+}
+
+.model .form .field label {
+   color: #888;
+   font-size: 1.2vw;
+   font-family: 'Habibi', serif;
+}
+
+.model .form .main {
+   margin-top: 1em;
+}
+
+.model .form .main input {
+   font-family: 'Habibi', serif;
+   width: 100%;
+   padding: 10% 0;
+   padding-left: 5px;
+   font-size: 1vw;
+   border-radius: 3px;
+   outline: 2px solid #1e40af;
+   margin-top: 0.4em;
+}
+
+.model .form .main textarea {
+   font-family: 'Habibi', serif;
+   width: 100%;
+   padding: 2% 0;
+   padding-left: 5px;
+   font-size: 1.6vw;
+   border-radius: 3px;
+   outline: 3px solid #1e40af;
+   margin-top: 0.4em;
+}
+
+.model .form .field .SelectBox {
+   outline: 2.5px solid #1e40af;
+   font-size: 1vw;
+   font-family: 'Habibi', serif;
+   padding-left: 5px;
+   border-radius: 3px;
+   margin-top: 0.4em;
+}
+
+
+@media screen and (max-width:768px) {
+   .model {
+       background-color: white;
+       height: 100%;
+   }
+
+   /* new */
+   .model .form .field .SelectBox {
+       outline: 1.4px solid #1e40af;
+       padding-left: 5px;
+       border-radius: 3px;
+       font-size: 4.5vw;
+
+   }
+
+   .model .form .field .SelectBox:focus {
+       outline: 1.5px solid black;
+       padding-left: 5px;
+       border-radius: 3px;
+
+
+   }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+   .model .form .field input:focus {
+       outline: 1px solid #000000 !important;
+   }
+
+   .model .form .main input {
+       font-size: 4.5vw;
+       outline: 1px solid #1e40af;
+   }
+
+   .model .form .main input:focus {
+       outline: 1px solid #000000 !important;
+   }
+
+
+   .model .form .main textarea {
+
+       font-size: 4.5vw;
+       border-radius: 3px;
+       outline: 1px solid #1e40af;
+   }
+
+   .model .form .main textarea:focus {
+       outline: 1px solid #000000 !important;
+   }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+   .book{
+      font-size: 8vw !important;
+   }
+
+   .appoint{
+      font-size: 4vw !important;
+   }
+}

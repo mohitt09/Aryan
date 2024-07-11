@@ -1,0 +1,32 @@
+ 
+
+{
+    "getintouch": "Get in touch",
+    "contactOne": "Contact",
+    "emergency": {
+      "text": "Emergency",
+      "numbers": [
+        "",
+        "9311339448"
+      ]
+    },
+    "location": {
+      "text": "Location",
+      "addresses": [
+        "78 , Old Railway Rd, Rattan Garden,Shivpuri Extension, Sector 7, Gurugram, Haryana 122001"
+      ]
+    },
+    "email": {
+      "text": "Email",
+      "addresses": [
+        "marketing@aryanhospital.in",
+        ""
+      ]
+    },
+    "workinghours": {
+      "text": "Working Hours",
+      "hours": "24 Hours Open",
+      "emergencyHours": ""
+    }
+  }
+  

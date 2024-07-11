@@ -1,0 +1,32 @@
+ 
+
+{
+    "getintouch": "Get in touch",
+    "contactOne": "Contact",
+    "emergency": {
+      "text": "Emergency",
+      "numbers": [
+        "681-812-255",
+        "9311339448"
+      ]
+    },
+    "location": {
+      "text": "Location",
+      "addresses": [
+        "78 , Old Railway Rd, Rattan Garden,Shivpuri Extension, Sector 7, Gurugram, Haryana 122001"
+      ]
+    },
+    "email": {
+      "text": "Email",
+      "addresses": [
+        "fildineeesoe@gmil.com",
+        "myebstudios@gmail.com"
+      ]
+    },
+    "workinghours": {
+      "text": "Working Hours",
+      "hours": "Mon-Sat 09:00-20:00",
+      "emergencyHours": "Sunday Emergency only"
+    }
+  }
+  

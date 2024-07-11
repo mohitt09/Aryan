@@ -1,0 +1,1154 @@
+.MainCardio {
+    display: flex;
+    gap: 4.8em;
+    cursor: pointer;
+}
+
+.SecCardio {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 14em;
+}
+
+
+
+
+.Border {
+    border: 0.5px solid rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: border-color 0.6s ease, background-color 0.3s ease, color 0.6s ease;
+    height: 12em;
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.Border:hover {
+    border-color: rgb(60, 55, 194);
+
+    background: #1f2b6c;
+    color: white;
+}
+
+.Img:hover {
+    mix-blend-mode: color-burn;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .MainCardio {
+        flex-direction: column;
+    }
+
+    .MainCardio {
+
+        gap: 2em;
+    }
+
+    .SecCardio {
+        gap: 2rem;
+    }
+
+
+}
+
+.CustumMv {
+    display: none;
+}
+
+
+
+.text {
+    font-weight: 300;
+    color: #1f2b6c;
+    font-family: 'Yeseva One';
+    font-size: 3vw;
+}
+
+
+
+.cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .cart {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.cart>div {
+    flex-grow: 1;
+}
+
+.cart .cart1 {
+    background-color: #1976d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.cart .cart1 .color {
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.cart .cart1 h6 {
+    color: #ffffff;
+    font-size: 2.5vw;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cart .cart1 p {
+    color: #ffffff;
+    font-size: 1.5vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Habibi', serif;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .cart .cart1 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart1 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+.cart .cart2 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 3%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cart .cart2 .color {
+    color: #000000;
+    font-size: 4em;
+}
+
+.cart .cart2 h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 2.5vw;
+    margin-top: 1em;
+}
+
+.cart .cart2 ul {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+}
+
+.cart .cart2 ul li {
+    padding: 2%;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Habibi', serif;
+    cursor: auto;
+}
+
+
+.cart .cart2 p {
+    color: #000000;
+    font-size: 1.5vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Habibi', serif;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .cart .cart2 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart2 ul {
+        width: 100%;
+        margin-top: 1.4em;
+        margin-bottom: 2em;
+        font-size: 4vw;
+        font-family: 'Habibi', serif;
+    }
+
+    .cart .cart2 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+.cart .cart3 {
+
+    background-color: #1976d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+
+.cart .cart3 .color {
+    color: #ffffff;
+    font-size: 4em;
+}
+
+
+.cart .cart3 p {
+    color: #ffffff;
+    font-size: 1.5vw;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Habibi', serif;
+    margin-top: 1em;
+}
+
+
+.cart .cart3 h6 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .cart .cart3 h6 {
+        font-size: 8vw;
+    }
+
+    .cart .cart3 p {
+        font-size: 4.6vw;
+        font-weight: 100;
+        width: 90%;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+}
+
+
+.button {
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5em;
+    height: 3.2vw;
+    padding: 0 2rem;
+    background: #ffffff;
+    background-size: 400%;
+    color: #1e40af;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button .button1 {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: #1976d2;
+    border: 2px solid white;
+    color: #fff;
+    transition: all 0.475s;
+    z-index: 0;
+}
+
+.button:hover .button1 {
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .button {
+        margin: 2em 0px;
+        font-size: 4vw;
+        height: 11vw;
+    }
+}
+
+
+.carouselWrapper {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrowContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #1e40af;
+    /* Thick blue border */
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill: #1e40af;
+    /* Blue color for arrow */
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Adjust the position as needed */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    /* background-color: black; Add styling for left arrow */
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust the position as needed */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    /* background-color: black; Add styling for right arrow */
+}
+
+.carouselItem {
+    text-align: center;
+}
+
+.carouselItem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carouselItem {
+    position: relative;
+}
+
+.textOverlay {
+    position: absolute;
+    font-size: xx-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(1, 1, 1);
+}
+
+
+
+
+
+.Services {
+    padding: 2% 2% 2% 1%;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.Services h4 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .Services {
+        padding: 0% 2% 2% 1%;
+    }
+
+    .Services h4 {
+        font-size: 8vw;
+        
+    }
+}
+
+
+.servicescarts {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .servicescarts {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+}
+
+
+.servicescart {
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-top: 1em;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .servicescart {
+        width: 90%;
+    }
+
+}
+
+.servicescart div {
+    font-size: 2vw;
+    color: #1e40af;
+    border-radius: 50%;
+    box-shadow: 3px 3px #ffffff;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.servicescart div:hover {
+    box-shadow: 3px 3px #1976d2;
+}
+
+.servicescart div span {
+    transition: all 0.3s linear;
+    border: 3px solid #1976d2;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.servicescart div span .icons {
+    font-size: 3vw;
+    transition: all 0.1s linear;
+    color: #1976d2;
+}
+
+.servicescart div:hover .icons {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:768px) {
+
+    .servicescart div span .icons {
+        font-size: 6vw;
+        transition: all 0.1s linear;
+        color: #1976d2;
+    }
+}
+
+
+.servicescart h3 {
+    color: #3e3e3e;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .servicescart h3 {
+        margin-top: 0em;
+        font-size: 7vw;
+    }
+}
+
+
+.servicescart p {
+    text-align: justify;
+    font-size: 1.5vw;
+    margin-top: 1em;
+    font-weight: 100;
+    font-family: 'Habibi', serif;
+
+    color: #8997a7;
+    letter-spacing: 0.5px;
+    line-height: 2vw;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .servicescart p {
+        text-align: center;
+        font-size: 4.5vw;
+        margin-top: 1em;
+        line-height: 6vw;
+    }
+}
+
+
+
+.Choose {
+    padding: 1%;
+    margin-top: 2em;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Choose h2 {
+    color: #3e3e3e;
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+}
+
+@media screen and (max-width:768px) {
+
+    .Choose h2 {
+        font-size: 8vw;
+    }
+}
+
+
+.container {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+
+.container .left {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.container .left img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container .left {
+        width: 100%;
+    }
+}
+
+
+.container .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.right>.side {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.right>.side>.choo {
+    width: 20%;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .right>.side {
+        display: flex;
+        align-items: start;
+        width: 82%;
+    }
+
+    .right>.side>.choo {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .right>.side {
+        width: 95%;
+    }
+
+    .right>.side>.choo {
+        width: 25%;
+    }
+}
+
+
+.right>.side>.choo>.chooo {
+    font-size: 2vw;
+    background: #1976d2;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .right>.side>.choo>.chooo {
+        font-size: 4vw;
+        width: 8vw;
+        height: 8vw;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .right>.side>.choo>.chooo {
+        font-size: 8vw;
+        width: 16vw;
+        height: 16vw;
+
+    }
+}
+
+
+
+.right>.side>.choo>.chooo:hover {
+    background: #fff;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+}
+
+.right>.side>.subs {
+    width: 100%;
+}
+
+
+.right>.side>.subs h5 {
+    line-height: 1.3em;
+    padding-bottom: 6px;
+    font-family: 'Raleway', sans-serif;
+    color: #1976d2;
+    font-size: 2.2vw;
+    font-weight: 100;
+}
+
+.right>.side>.subs p {
+    padding-bottom: 6px;
+    font-family: 'Raleway', sans-serif;
+    color: #8997a7;
+    font-family: 'Habibi', serif;
+    line-height: 1.4em;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .right>.side>.subs h5 {
+        color: #1976d2;
+        font-size: 3.8vw;
+
+    }
+
+    .right>.side>.subs p {
+        font-size: 1.8vw;
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .right>.side>.subs h5 {
+        font-size: 6.8vw;
+
+        font-weight: 600;
+
+    }
+
+    .right>.side>.subs p {
+        font-size: 4.6vw;
+    }
+}
+
+
+
+.sliderTextOverlay {
+    width: 100%;
+}
+
+
+
+/* NEW */
+
+.title {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 4.5vw;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title span {
+    font-family: 'Raleway', sans-serif;
+    /* padding-left: 5%; */
+    text-align: justify;
+    font-size: 4.5vw;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1976d2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        font-size: 6vw;
+        text-align: left;
+        /* padding-left: 5%; */
+    }
+
+    .title span {
+        font-size: 6vw;
+        padding-left: 0%;
+    }
+}
+
+.description {
+    font-weight: 600;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Habibi', serif;
+    padding-left: 5%;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description span {
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 2vw;
+    color: #ffffff;
+    background: #1976d2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:768px) {
+    .description {
+        margin-top: 5px;
+        font-size: 4vw;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .description span {
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+}
+
+
+.sliderMain {
+    position: relative;
+}
+
+.sliderTextOverlay {
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .sliderTextOverlay {
+        position: absolute;
+        top: 19%;
+    }
+}
+
+.model {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.301);
+    overflow: scroll;
+}
+
+
+.model .form {
+    width: 40%;
+    background: white;
+    padding: 2%;
+    margin-top: 1em;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+
+    .model .form {
+        width: 100%;
+        background-color: white;
+        padding: 2%;
+        margin-top: 1em;
+        position: relative;
+    }
+
+}
+
+.close {
+    right: 2em;
+    position: absolute;
+    font-size: 2.4vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.close:hover {
+    transform: scale(.95);
+}
+
+@media screen and (max-width:768px) {
+    .close {
+        font-size: 4vw;
+        top: 3vw;
+    }
+}
+
+
+.model .form h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    /* padding: 1% 0 3% 0; */
+    font-size: 2vw;
+    color: #1e40af;
+}
+
+
+@media screen and (max-width:768px) {
+    .model .form h2 {
+        font-size: 5vw;
+    }
+}
+
+
+.model .form .line {
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.model .form .field {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3%;
+}
+
+
+
+.model .form .field .right,
+.model .form .field .left {
+    width: 50%;
+}
+
+.model .form .field select,
+.model .form .field input {
+    font-family: 'Habibi', serif;
+    width: 100%;
+    padding: 4% 0;
+    padding-left: 5px;
+    font-size: 1vw;
+    border-radius: 3px;
+    outline: 2px solid #1e40af;
+    margin-top: 0.4em;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .model .form .field .right label,
+    .model .form .field .left label {
+        font-size: 4.5vw;
+    }
+
+    .model .form .field select,
+    .model .form .field input {
+        font-family: 'Habibi', serif;
+        width: 100%;
+        padding: 3% 0;
+        padding-left: 5px;
+        font-size: 4.5vw;
+        border-radius: 3px;
+        outline: 1px solid #1e40af;
+        margin-top: 0.4em;
+    }
+}
+
+.model .form .field label {
+    color: #888;
+    font-size: 1.2vw;
+    font-family: 'Habibi', serif;
+}
+
+
+
+
+.model .form .field input:focus {
+    outline: 2px solid #000000 !important;
+}
+
+
+.model .form .main {
+    margin-top: 1em;
+}
+
+.model .form .main input {
+    font-family: 'Habibi', serif;
+    width: 100%;
+    padding: 10% 0;
+    padding-left: 5px;
+    font-size: 1vw;
+    border-radius: 3px;
+    outline: 2px solid #1e40af;
+    margin-top: 0.4em;
+}
+
+.model .form .main input:focus {
+    outline: 3px solid #000000 !important;
+}
+
+
+
+.model .form .main textarea {
+    font-family: 'Habibi', serif;
+    width: 100%;
+    padding: 2% 0;
+    padding-left: 5px;
+    font-size: 1.6vw;
+    border-radius: 3px;
+    outline: 3px solid #1e40af;
+    margin-top: 0.4em;
+}
+
+.model .form .main textarea:focus {
+    outline: 3px solid #000000 !important;
+}
+
+
+.sub {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .model .form .field input:focus {
+        outline: 1px solid #000000 !important;
+    }
+
+    .model .form .main input {
+        font-size: 4.5vw;
+        outline: 1px solid #1e40af;
+    }
+
+    .model .form .main input:focus {
+        outline: 1px solid #000000 !important;
+    }
+
+
+    .model .form .main textarea {
+
+        font-size: 4.5vw;
+        border-radius: 3px;
+        outline: 1px solid #1e40af;
+    }
+
+    .model .form .main textarea:focus {
+        outline: 1px solid #000000 !important;
+    }
+
+}
+
+
+/* new */
+.model .form .field .SelectBox {
+    outline: 2.5px solid #1e40af;
+    font-size: 1vw;
+    font-family: 'Habibi', serif;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin-top: 0.4em;
+}
+
+.model .form .field .SelectBox:focus {
+    outline: 2.5px solid #1e40af;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin-top: 0.4em;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .model {
+        background-color: white;
+        height: 100%;
+    }
+
+    /* new */
+    .model .form .field .SelectBox {
+        outline: 1.4px solid #1e40af;
+        padding-left: 5px;
+        border-radius: 3px;
+        font-size: 4.5vw;
+
+    }
+
+    .model .form .field .SelectBox:focus {
+        outline: 1.5px solid black;
+        padding-left: 5px;
+        border-radius: 3px;
+
+
+    }
+
+}
+
+.line {
+    border-bottom: 2px solid #1e40af;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    margin: 0 auto 45px;
+    padding: 5px;
+    position: relative;
+    width: 120px;
+}

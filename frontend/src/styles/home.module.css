@@ -1,0 +1,173 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #2747b2;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease, visibility 0.3s ease;
+    font-weight: bold;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.3s ease;
+}
+
+.dropdowncontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+    transition: all 0.3s ease;
+}
+
+.dropdowncontent a:hover {
+    background-color: #1976d2;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+
+
+/* NAv */
+
+.bar{
+    padding: 1% 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Nav{
+    z-index: 1 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn{
+    margin-right: 0em;
+}
+
+
+@media screen and (max-width:1050px) {
+
+    .Nav{
+        margin-left: 0em;
+    }
+    
+    .btn{
+        margin-right: 0em;
+    }
+    
+    
+}
+
+
+
+.hum{
+    display: flex;
+    justify-content: end;
+}
+
+
+.font{
+    font-size: 1.2vw;
+    white-space: nowrap;
+    font-family: 'Habibi', serif;
+    
+    padding: 10% 2%;
+
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+
+
+.font2{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-family: 'Habibi', serif;
+}
+
+@media screen and (max-width:1024px) {
+    .font{
+        font-size: 1vw;
+        width: 75px;
+    }
+
+    .font2{
+        font-size: 1vw;
+        font-family: 'Habibi', serif;
+    }
+    
+}
+
+.doc{
+    border-bottom: 1.2px solid rgb(213, 207, 207);
+}
+
+.zen{
+    border-top: 1px solid gray;
+    border-bottom:1px solid gray ;
+    color: white;
+}
+
+.depart{
+    border-bottom: 1.2px solid rgb(213, 207, 207);
+    color: white;
+}
+
+/* home.module.css */
+
+.select {
+    background-color: rgb(31 43 108); /* Blue background */
+    color: #ffffff; /* White text color */
+  }
+  
+  /* Styles for the select options */
+  .select option {
+    color: white; /* White text color */
+  }
+  
+  .customDatePicker input {
+    background-color: #4a5568; /* Adjust the background color as needed */
+    color: white;
+    height: 50px;
+    padding: 13px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #2d3748; /* Adjust the border color as needed */
+    width: 245px;
+   }

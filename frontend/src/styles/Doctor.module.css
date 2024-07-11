@@ -1,0 +1,883 @@
+.container3 {
+    padding: 2% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: aliceblue;
+    width: 100%;
+}
+
+.container3 .left {
+    width: 50%;
+    padding: 0 0 0 4%;
+}
+
+.container3 .right {
+    width: 50%;
+    padding: 0 0 0 4%;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container3 .right {
+        width: 100%;
+        padding: 0 0 0 0%;
+    }
+
+}
+
+/* changed */
+.container3 .left h1 {
+    color: #3e3e3e;
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.container3 .left p {
+    color: #8997a7;
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+    font-weight: 100;
+    text-align: justify;
+    width: 100%;
+}
+
+
+@media screen and (max-width : 681px) {
+
+    .container3 {
+        padding: 2% 2%;
+    }
+
+    .container3 .left {
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .container3 .left h1 {
+        font-size: 4.3vw;
+        font-weight: 600;
+        margin-bottom: 1em;
+        white-space: nowrap;
+    }
+
+
+    .container3 .left p {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        font-size: 4vw;
+        font-weight: 100;
+        text-align: justify;
+        width: 100%;
+    }
+
+
+}
+
+
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 0 0 0 8%;
+    height: 60%;
+    margin-bottom: 2em;
+}
+
+
+section>div {
+    width: 70%;
+    text-align: start;
+    padding-left: 4%;
+}
+
+@media screen and (max-width:768px) {
+
+    section>div {
+        width: 100%;
+        padding-left: 0%;
+    }
+}
+
+section>div>p {
+    color: #3e3e3e;
+    display: flex;
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+section>div>h5 {
+    display: flex;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+    font-weight: 600;
+    color: #8997a7;
+}
+
+section>div>h6 {
+    display: flex;
+    color: #8997a7;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+}
+
+
+section>div>.left {
+    width: 30%;
+}
+
+@media screen and (max-width : 681px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: gainsboro;
+        padding: 5% 2%;
+        height: 60%;
+    }
+
+    section>div>p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+        margin-bottom: 2vw;
+        font-weight: 600;
+    }
+
+    section>div>h5 {
+        display: flex;
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        font-weight: 600;
+        justify-content: center;
+    }
+
+
+    section>div>h6 {
+        display: flex;
+        margin-bottom: 2vw;
+
+        display: flex;
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+        justify-content: center;
+        padding: 10% 8%
+    }
+
+}
+
+
+@media screen and (max-width: 1070px) {
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.Form .First {
+    display: flex;
+}
+
+.Form .First input {
+    all: unset;
+    border: 1px solid rgb(155, 155, 155);
+    font-weight: 100;
+    width: 25vw;
+    padding: 2.5% 2%;
+    background: #1f2b6c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+}
+
+
+.Form .First .Date {
+    all: unset;
+    border: 1px solid rgb(155, 155, 155);
+    font-weight: 100;
+    width: 24.1vw;
+    padding: 5.5% 2%;
+    background: #1f2b6c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+}
+
+.Form .First .top {
+    border-top-left-radius: 5px;
+}
+
+
+.Form .First select {
+    all: unset;
+    border: 1px solid rgb(155, 155, 155);
+    font-weight: 100;
+    width: 25vw;
+    padding: 2% 2%;
+    background: #1f2b6c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background: #1f2b6c url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="rgba(255, 255, 255, 1)" width="9" height="9"><path d="M7 10l3 3 3-3z"/></svg>') no-repeat right center;
+    background-size: 40px;
+    appearance: none;
+    border-top-right-radius: 5px;
+    font-size: 1.5em;
+}
+
+
+select::-ms-expand {
+    display: none;
+    color: #ffffff;
+}
+
+.Form .First select option {
+    background: rgb(37, 37, 37);
+    color: #ffffff;
+    font-size: large;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+.Form .Two {
+    display: flex;
+}
+
+.Form .Two input {
+    all: unset;
+    border: 1px solid rgb(155, 155, 155);
+    font-weight: 100;
+    width: 50vw;
+    padding: 6% 2%;
+    background: #1f2b6c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+}
+
+
+.Form button {
+    background: #bed2f7;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    padding: 3%;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.Form button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    animation: none;
+    pointer-events: none;
+}
+
+.Form button:hover::after {
+    animation: moveLight 1s infinite;
+}
+
+@keyframes moveLight {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+
+@media screen and (max-width:848px) {
+    .Form .First {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Form .First .top {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .Form .First select {
+        border-top-right-radius: 0px;
+    }
+
+    .Form .First input {
+        width: 50vw;
+        padding: 4% 3%;
+
+    }
+
+
+    .Form .Two input {
+        width: 53.2vw;
+        padding: 6.5% 4%;
+    }
+
+    .Form .First select {
+
+        width: 50vw;
+        padding: 4% 3%;
+    }
+
+    .Form .First .Date {
+        width: 50vw;
+        padding: 4% 3%;
+
+    }
+
+}
+
+
+@media screen and (min-width:400px) and (max-width:596px) {
+
+
+
+    .Form .First input {
+        width: 70vw;
+        padding: 8% 4%;
+        font-size: 1em;
+    }
+
+
+    .Form .Two input {
+        width: 76.6vw;
+        padding: 6.5% 3%;
+    }
+
+    .Form .First select {
+
+        width: 70vw;
+        padding: 8% 4%;
+        font-size: 1em;
+    }
+
+    .Form button {
+        padding: 6% 3%;
+        font-size: 1em;
+    }
+
+    .Form .First .Date {
+        width: 71.5vw;
+        padding: 4% 3%;
+
+    }
+
+    .Form .Two {
+        display: flex;
+        width: 76.3vw;
+    }
+}
+
+
+@media screen and (max-width:399px) {
+
+
+
+    .Form .First input {
+        width: 70vw;
+        padding: 8% 4%;
+        font-size: 1em;
+    }
+
+
+    .Form .Two input {
+        width: 76.1vw;
+        padding: 8% 4%;
+        padding: 10% 4%;
+        font-size: 1em;
+    }
+
+    .Form .First select {
+
+        width: 70vw;
+        padding: 8% 4%;
+        font-size: 1em;
+    }
+
+    .Form button {
+        padding: 6% 3%;
+        font-size: 1em;
+    }
+
+    .Form .First .Date {
+        width: 71.5vw;
+        padding: 4% 3%;
+
+    }
+}
+
+
+/* new */
+
+.container {
+    padding: 3% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #ffe6fb;
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        margin: 4% 0;
+    }
+}
+
+
+
+.container .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .container .img {
+        width: 100%;
+    }
+}
+
+
+/* changed */
+.container .img h5 {
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #2563eb;
+    text-transform: uppercase;
+
+}
+
+
+/* changed */
+@media screen and (max-width:600px) {
+    .container .img h5 {
+        font-size: 8vw;
+    }
+}
+
+.container .img h6 {
+    font-size: 1.5vw;
+    font-family: 'Habibi', serif;
+    font-weight: 300;
+    color: #2563eb;
+}
+
+@media screen and (max-width:600px) {
+
+    .container .img h6 {
+        font-size: 5vw;
+    }
+}
+
+
+.container .img img {
+    border-radius: 50%;
+    border: 5px solid rgb(236, 236, 236);
+    background: white;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+
+    .container .img img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
+.topright {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topright .box {
+    width: 70%;
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(201, 0, 187, 0.32);
+    background: #dbffe7;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.topright .box form {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .topright .box {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .topright {
+        width: 100%;
+
+    }
+
+    .topright .box {
+        width: 100%;
+    }
+
+}
+
+
+
+.topright .box .app {
+    display: flex;
+    padding-left: 5px;
+    color: #3e3e3e;
+    width: 90%;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55);
+    
+    background: #2563eb;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+.topright .box .app h6{
+    padding: 2% 0px;
+    color: white;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .topright .box .app {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:456px) {
+
+    .topright .box .app {
+        font-size: 5vw;
+    }
+}
+
+.topright .box form .check {
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 1em;
+    gap: 5px;
+    font-family: 'Habibi', serif;
+}
+
+.topright .box form .check .checkboxLabel {
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.topright .box form .inputfield {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.redoutline {
+    outline: 2px solid red;
+}
+
+.topright .box form .inputfield input {
+    all: unset;
+    background: white;
+    color: #8997a7;
+    font-family: 'Habibi', serif;
+    width: 70%;
+    padding: 4% 10%;
+    border-radius: 30px;
+}
+
+.topright .box form .inputfield .inputicon {
+    background: white;
+    position: absolute;
+    color: #1f2b6c;
+    left: 9%;
+}
+
+
+.topright .box form .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.topright .box form .btn1 button {
+    width: 70%;
+    padding: 4% 10%;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Habibi', serif;
+    background-color: #2563eb;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.topright .box form .btn1 button:focus{
+    background-color: #1c50be;
+}
+
+
+
+.container2 {
+    padding: 4% 9%;
+    display: flex;
+    justify-content: space-around;
+    gap: 28vw;
+    align-items: start;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.container2::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: rgb(14, 14, 150);
+    height: 50%;
+}
+
+.container2 .left {
+    font-weight: 600;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 6%;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container2 .left {
+        width: 100%;
+        align-items: start;
+        padding-left: 3%;
+        margin-left: 0%;
+    }
+}
+
+.container2 .right {
+    font-weight: 600;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@media screen and (max-width:768px) {
+
+
+    .container2 .right {
+        /* gap: 2vw; */
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
+/* changed */
+.container2 .left p {
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    font-size: 2vw;
+    margin-left: -1vw;
+}
+
+.container2 .left ul {
+    margin-top: 1vw;
+
+}
+
+
+/* 23 */
+.container2 .left ul li {
+    font-size: 1.5vw;
+    margin-top: 0.4vw;
+    list-style: none;
+    font-family: 'Habibi', serif;
+    color: #2563eb;
+    font-weight: 100;
+    /* list-style-type: "\2605"; */
+    list-style-type: disc;
+}
+
+
+/* changed */
+.container2 .right p {
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -5%;
+}
+
+.container2 .right ul {
+    margin-top: 1vw;
+}
+
+
+/* changed */
+.container2 .right ul li {
+    font-size: 1.5vw;
+    margin-top: 0.4vw;
+    list-style: none;
+    color: #2563eb;
+    font-family: 'Habibi', serif;
+    font-weight: 100;
+    /* list-style-type: "\2605"; */
+    list-style-type: disc;
+}
+
+
+@media screen and (max-width : 681px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10vw;
+        width: 100%;
+        height: 60%;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .container2::before {
+        all: unset;
+
+    }
+
+    .container2 .left p {
+        font-size: 10vw;
+        margin-bottom: 1vw;
+        margin-left: -5%;
+    }
+
+    .container2 .left ul li {
+        font-size: 4vw;
+        margin-top: 0.4vw;
+        font-family: 'Habibi', serif;
+        font-weight: 100;
+    }
+
+    .container2 .right p {
+        font-size: 10vw;
+        margin-bottom: 1vw;
+        margin-left: -3%;
+    }
+
+    .container2 .right ul li {
+        font-size: 4vw;
+        margin-top: 0.4vw;
+        font-weight: 100;
+    }
+
+}
+
+
+
+.listinfo {
+    font-size: 0.5em;
+}

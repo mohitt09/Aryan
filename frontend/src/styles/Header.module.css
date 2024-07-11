@@ -1,0 +1,57 @@
+.Header {
+  padding: 10px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 670px) {
+  .Header {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    margin-bottom: 18px;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+ 
+  .set {
+    display: flex !important;
+    /* gap: 3rem !important; */
+  }
+}
+
+
+
+/* Nav */
+
+
+
+
+
+@media screen and (min-width: 650px) and (max-width: 1024px) {
+  .Header {
+    height: 20vh;
+  }
+}
+
+.logo{
+  margin-left: 5em;
+}
+
+.set{
+  margin-right: 5em;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 880px) {
+  .logo{
+    margin-left: 0em;
+  }
+  
+  .set{
+    margin-right: 0em;
+  }
+}
+
+
+
